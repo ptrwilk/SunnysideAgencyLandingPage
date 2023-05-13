@@ -1,12 +1,13 @@
 import { ThemeProvider, createTheme } from "@mui/material";
 import "./App.scss";
+import SunnysideAgencyLandingPage from "./Pages/SunnysideAgencyLandingPage";
 
 const theme = createTheme({
   typography: {
     body1: {
       fontSize: 18,
     },
-    fontFamily: "xxxx",
+    fontFamily: "Barlow",
   },
   components: {
     MuiList: {
@@ -16,7 +17,7 @@ const theme = createTheme({
     },
     MuiListItem: {
       defaultProps: {
-        // disablePadding: true,
+        disablePadding: true,
       },
     },
   },
@@ -25,7 +26,9 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <div className="app"></div>
+      <div className="app">
+        <SunnysideAgencyLandingPage />
+      </div>
     </ThemeProvider>
   );
 }

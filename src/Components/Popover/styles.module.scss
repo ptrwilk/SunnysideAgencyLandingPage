@@ -1,0 +1,13 @@
+.MuiPopover-container{
+    display: flex;
+    flex-direction: column;
+
+    .triangle{
+        align-self: flex-end;
+        width: 0;
+        height: 0;
+        border-bottom: 25px solid var(--white);
+        border-left: 25px solid transparent;
+    }
+
+}
